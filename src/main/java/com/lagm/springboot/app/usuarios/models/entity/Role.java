@@ -15,12 +15,14 @@ import lombok.Data;
 @Entity
 @Table(name = "roles")
 public class Role implements Serializable {
-	private static final long serialVersionUID = 234103176895355370L;
-	
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // Identity: Mysql, SQL Server, H2
 	private Long id;
 
 	@Column(unique = true, length = 30)
 	private String nombre;
+
+	private static final long serialVersionUID = 234103176895355370L;
+
 }
