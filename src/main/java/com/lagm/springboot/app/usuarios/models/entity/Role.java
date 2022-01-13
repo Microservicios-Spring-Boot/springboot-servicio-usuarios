@@ -22,6 +22,12 @@ public class Role implements Serializable {
 
 	@Column(unique = true, length = 30)
 	private String nombre;
+	
+	/* Se puede implementar la relación bidireccional: Los roles que tienen a los usuarios
+	  mappedBy: indica la relación inversa. Es requerido siempre y cuando queramos que la relación sea bidireccional*/
+	/*@ManyToMany(fetch = FetchType.LAZY, mappedBy = "roles")
+	private List<Usuario> usuarios;
+	*/
 
 	private static final long serialVersionUID = 234103176895355370L;
 
