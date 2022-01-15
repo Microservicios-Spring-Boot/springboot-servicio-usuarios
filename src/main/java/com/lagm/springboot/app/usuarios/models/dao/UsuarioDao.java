@@ -6,7 +6,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.core.annotation.RestResource;
 
-import com.lagm.springboot.app.usuarios.models.entity.Usuario;
+import com.lagm.springboot.app.commons.usuarios.models.entity.Usuario;
 
 @RepositoryRestResource(path = "usuarios")
 /* Expone un api rest para realizar el crud. Con path indicamos el enpoint donde se va a exportar todos los métodos del Crud. Listar, listar por id, crear, modificar, eliminar, y
